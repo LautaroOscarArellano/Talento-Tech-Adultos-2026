@@ -1,0 +1,164 @@
+/* flexbox-o-grid */
+
+*{
+    text-decoration: none;
+}
+/* commond and common */
+body {
+    background-color: #311d40; /* marrón más oscuro que el wheat */
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+
+}
+/* Titulo */
+.title-box
+{
+    display: flex;
+    align-items: center;  
+}
+
+.tittle
+{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: gray;
+    flex: 1;
+}
+.image-title
+{
+    width: 50px;
+    height: 40px;
+    object-fit: cover;  
+}
+
+.image-title:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contenido 
+{
+    background-color: white ;
+    width: 650px;
+    /*  */
+    max-width: 100%;   
+    margin: 0 auto; 
+    padding: 2rem;
+}
+
+/* Navegacion */
+.nav-tab   
+{ 
+    text-align: center;
+    border: 1px solid;
+    border-left-width: 35px;
+    border-right-width :35px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.nav-content
+{
+    color: black;
+}
+
+/* Caja  de urls */
+.utility-box
+{
+    display: flex;
+    padding: 2rem;
+}
+
+.utility-urls-box
+{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Tamaño de la cajita */
+    height: auto;
+    width: 400rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.fondo {
+    position: absolute;  /* ← se pone detrás */
+    width: 220%;
+    height: 215%;
+    background-color: black;
+    background-image: url('./images/portal.png');
+    background-size: cover;
+    background-position: center;
+    animation: girar 8s linear infinite;
+    z-index: 0;  /* ← detrás de los botones */
+    top: -55%;
+    left: -55%
+}
+
+@keyframes girar {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.text-box
+{
+    width: 500rem;
+}
+
+.little-box {
+    background-color: #1e0050;
+    border: 1.45px solid whitesmoke;
+    color: aliceblue;
+    text-align: center;
+    /* Diseño borde */
+    border-radius: 1rem;
+    /* Separacion */
+    padding: 0.2rem;
+    margin: 3px;
+    /* Tamaños cajita */
+    width: 120px;
+    height: 30px;      
+    /* Tamaño de letrita*/
+    font-size: 14px;
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+
+}
+.little-box:hover
+{
+    box-shadow: 0 0 150rem 2rem white;
+    transform: scale(1.1);
+    border: 1.45px solid #050014;
+    background-color: #050014;
+}
+
+/* Galeria */
+.text-gal
+{
+    margin: 50px;
+}
+
+
+.tamaño-gal
+{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    filter: brightness(0.6);  /* ← oscura por defecto */
+
+}
+
+.tamaño-gal:hover
+{
+    transform: scale(1.5);
+    filter: brightness(1.2);  /* ← brillante al hover */
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}

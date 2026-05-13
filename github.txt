@@ -1,0 +1,5 @@
+1] git init
+1.5]  git remote add origin  vincular repo con github  -   
+2] git add 
+3] git commit -m "primer guardado"
+4] git push
