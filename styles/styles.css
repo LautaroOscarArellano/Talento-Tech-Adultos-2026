@@ -90,7 +90,7 @@ body {
     width: 220%;
     height: 215%;
     background-color: black;
-    background-image: url('../images/portal.png');
+    background-image: url('/Talento-Tech-Adultos-2026/images/portal.png');
     background-size: cover;
     background-position: center;
     animation: girar 8s linear infinite;
